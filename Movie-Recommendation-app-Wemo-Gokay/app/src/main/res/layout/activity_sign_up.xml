@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                android:layout_margin="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gokay"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Up"
+                            android:textSize="25dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="Full name"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:drawableLeft="@drawable/ic_home_black_24dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPersonName"
+                                android:id="@+id/signUpNameEdit"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="Email"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:drawableLeft="@drawable/ic_home_black_24dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="textEmailAddress"
+                                android:id="@+id/signUpEmailEdit"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="Phone"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:drawableLeft="@drawable/ic_home_black_24dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="phone"
+                                android:id="@+id/signUpPhoneEdit"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="Password"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:drawableLeft="@drawable/ic_home_black_24dp"
+                                android:inputType="textPassword"
+                                android:id="@+id/signUpPasswordEdit"
+                                android:drawablePadding="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="Verify Password"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:drawableLeft="@drawable/ic_home_black_24dp"
+                                android:inputType="textPassword"
+                                android:id="@+id/signUpPasswordEdit1"
+                                android:drawablePadding="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                        <Button
+                            android:background="#fece2f"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/signUpButton"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:text="Submit" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Already have an account? "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#FF3700B3"
+                                android:id="@+id/signInText"
+                                android:text="Sign In"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

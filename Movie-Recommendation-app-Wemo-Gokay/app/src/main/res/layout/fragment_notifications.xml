@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="125dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:cardBackgroundColor="@color/purple_500"
+                    app:cardElevation="10dp">
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_dashboard_black_24dp" />
+
+                        <Button
+                            android:id="@+id/logoutButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="5dp"
+                            android:backgroundTint="#e41e0c"
+                            android:text="Logout" />
+                        <TextView
+                            android:id="@+id/payment_label"
+                            android:includeFontPadding="false"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text=""
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/payment_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/payment_label"
+                            android:layout_centerHorizontal="true"
+                            android:includeFontPadding="false"
+                            android:text="My Account"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp"
+                android:padding="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Full Name"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawableLeft="@drawable/ic_home_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:id="@+id/full_name_profile"
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Email"
+                    android:id="@+id/email"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawableLeft="@drawable/ic_home_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:id="@+id/email_profile"
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Phone"
+                    android:id="@+id/phoneEdit"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:drawableLeft="@drawable/ic_home_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:id="@+id/phone_profile"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <Button
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:text="UPDATE" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

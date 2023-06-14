@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083369920896",
+    "project_id": "wemo-570a2",
+    "storage_bucket": "wemo-570a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083369920896:android:53d95da615f25e9b838965",
+        "android_client_info": {
+          "package_name": "com.kayzsystems.wemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBENJvknRSAuVrxNEjcl_ErzlOwuub6uhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
